@@ -4,7 +4,7 @@ const port = process.env.PORT || 3000
 
 require('dotenv').config();
 
-let appInsights = require("applicationinsights");
+const appInsights = require("applicationinsights");
 
 appInsights.setup(process.env.INSTRUMENTATION_KEY)
     .setAutoDependencyCorrelation(true)
